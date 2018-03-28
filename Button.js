@@ -8,7 +8,7 @@ class Button extends React.Component {
     const { onClick, text, social } = this.props
 
     return (
-      <button onClick={onClick}>
+      <button onClick={onClick} className={ social ? 'social-btn ' + social : ''}>
         {social ? 'Continue with ' + text[0].toUpperCase() + text.substr(1)
         : text}
       </button>
